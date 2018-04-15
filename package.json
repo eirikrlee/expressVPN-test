@@ -1,5 +1,5 @@
 {
-  "name": "expressVPN test",
+  "name": "expressVPN-test",
   "version": "1.0.0",
   "description": "Writing some cool tests for exprss vpn",
   "main": "index.js",
