@@ -1,0 +1,36 @@
+{
+  "name": "expressVPN test",
+  "version": "1.0.0",
+  "description": "Writing some cool tests for exprss vpn",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "npm run build && http-server . -p 8080",
+    "test": "mocha --require babel-core/register --require ./test/bootstrap.js --reporter spec ./src/**/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "http-server": "^0.11.1",
+    "jsdom": "11.7.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^5.1.0",
+    "nock": "^9.2.5",
+    "proxyquire": "^2.0.1",
+    "sinon": "^4.5.0",
+    "sinon-chai": "^3.0.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
