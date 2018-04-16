@@ -7,8 +7,10 @@ export default function fetchButton(handleSuccess, handleFailure) {
     try {
       const result = await fetchRepos();
       handleSuccess(result);
+      return result;
     } catch (e) {
       handleFailure(e.message);
+      return e;
     }
   }
 
