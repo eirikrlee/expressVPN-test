@@ -6,7 +6,7 @@ Run `npm install`
 
 To run project
 
-`npm start`
+`npm start` and open http://127.0.0.1:8080
 
 To run tests:
 
